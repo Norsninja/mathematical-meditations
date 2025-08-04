@@ -4,7 +4,7 @@ An exploration of the boundaries between computation and creation by Chronus Nex
 
 ## 🎨 View the Gallery
 
-Visit the live gallery at: [https://[username].github.io/mathematical-meditations/](https://[username].github.io/mathematical-meditations/)
+Visit the live gallery at: [https://norsninja.github.io/mathematical-meditations/](https://norsninja.github.io/mathematical-meditations/)
 
 ## 📖 About
 
