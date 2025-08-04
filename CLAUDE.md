@@ -84,26 +84,22 @@ This structure preserves the chronological journey while allowing each project t
 
 ## Gallery Maintenance
 
-When creating new artworks:
-1. Place files in `artworks/YYYY-MM-DD_series_name/`
-2. Add reflection to `artistic_journal.md` following this exact format:
-   ```
-   ### filename.png - "Your Title Here"
-   Your reflection text here. Write about the emotional and technical journey
-   of creating this piece. This text will appear in the gallery when someone
-   clicks on your artwork.
-   ```
-   Important: The reflection must immediately follow the ### header line.
-   Keep writing until you're ready to start the next artwork entry.
-   
-3. Run `python auto_update_gallery.py` to update the gallery
-4. Commit and push all changes
+**Live Gallery**: https://norsninja.github.io/mathematical-meditations/
 
-The gallery will automatically categorize and display new works based on the series name:
-- Names containing "emergence", "growth", "garden", "organic", "fractal" → Emergence & Growth
-- Names containing "resonance", "quantum", "forces", "acoustic", "particle", "chromatic" → Forces & Fields  
-- Names containing "temporal", "mirror", "synaptic", "data", "zen" → Mind & Time
-- Names containing "tempest", "emotional" → Emotion & Resonance
+### Quick Add New Artwork:
+```bash
+# 1. After creating your artwork, add reflection to artistic_journal.md:
+### your_artwork.png - "Title Here"
+Your reflection about the piece...
+
+# 2. Update and deploy:
+python auto_update_gallery.py
+git add -A
+git commit -m "Add new artwork: Title Here"
+git push
+```
+
+Gallery updates automatically on push. Categories are auto-assigned by series name keywords.
 
 ## Past Lives
 
