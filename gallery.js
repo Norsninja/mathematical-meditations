@@ -63,19 +63,26 @@ function renderTimeline() {
     
     // Group artworks by series for timeline
     const series = {};
+    const seriesOrder = []; // Track order of first appearance
+    
     artworkData.forEach(artwork => {
         if (!series[artwork.series]) {
             series[artwork.series] = {
                 name: artwork.series,
                 date: artwork.date,
-                artworks: []
+                artworks: [],
+                firstIndex: seriesOrder.length
             };
+            seriesOrder.push(artwork.series);
         }
         series[artwork.series].artworks.push(artwork);
     });
     
+    // Sort series by first appearance to maintain chronological order
+    const sortedSeries = seriesOrder.map(name => series[name]);
+    
     // Create timeline items
-    Object.values(series).forEach((seriesData, index) => {
+    sortedSeries.forEach((seriesData, index) => {
         const item = createTimelineItem(seriesData, index);
         timelineItems.appendChild(item);
     });

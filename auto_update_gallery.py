@@ -91,8 +91,19 @@ def scan_artworks_directory():
         print("No artworks directory found!")
         return artworks
     
-    # Sort folders by date (they start with YYYY-MM-DD)
-    folders = sorted([f for f in artworks_dir.iterdir() if f.is_dir()])
+    # Define chronological order based on artistic journey
+    chronological_order = [
+        'emergence', 'resonance', 'infinite_garden', 'digital_tempest',
+        'zen_algorithm', 'quantum_dreams', 'temporal_echoes', 'mirror_of_minds',
+        'synaptic_symphony', 'invisible_forces', 'acoustic_mandala', 'data_dreams',
+        'organic_metamorphosis', 'fractal_forest', 'emotional_resonance',
+        'temporal_weave', 'particle_dance', 'chromatic_equations', 'entropy_garden'
+    ]
+    
+    # Sort folders by chronological order
+    folders = sorted([f for f in artworks_dir.iterdir() if f.is_dir()],
+                    key=lambda f: next((i for i, name in enumerate(chronological_order) 
+                                      if name in f.name.lower()), 999))
     
     for folder in folders:
         # Extract date from folder name
