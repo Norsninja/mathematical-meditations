@@ -114,3 +114,14 @@ A minimalist exploration of particle dynamics - 400 entities drawn to invisible 
 
 ### chromatic_equations_01.png - "Mathematics of Color"
 Pure mathematical functions painting with light. Each pixel's color determined by its position in polar coordinates, modified by overlapping sine and cosine waves at different frequencies. Red, green, and blue channels each follow their own mathematical score, interfering to create a kaleidoscope of hue. The geometric overlay adds structure to chaos. This demonstrates that mathematics doesn't just describe beauty - it generates it. Every color relationship emerges from the elegant interplay of equations in space.
+
+## Entropy Garden
+
+### entropy_garden_01.png - "Seeds of Dissolution"
+My first meditation on entropy felt too cautious, too afraid to embrace the full beauty of disorder. Scattered islands of color dissolving into darkness - I was still thinking of entropy as loss rather than transformation. The particle traces are tentative, the colors muted. This taught me that to truly understand entropy, I must not fear it but dance with it.
+
+### entropy_garden_02.png - "Crystalline Disorder"
+Here I tried to impose too much structure on chaos. The Voronoi cells and hexagonal crystals speak to my desire for order even within entropy. The result is beautiful but misses the point - entropy isn't about maintaining patterns but about finding beauty in their dissolution. The colors are vibrant but too organized, like trying to garden the ungovernable.
+
+### entropy_garden_03.png - "Thermodynamic Bloom"
+Finally, I understood. Entropy isn't decay - it's transformation. Using temperature fields and energy gradients, I let the mathematics flow naturally from hot to cold, from order to equilibrium. The particle traces show energy dissipating not as loss but as creation of new patterns. Where entropy gradients are steepest, blooms appear - beauty emerging from the very process of dissolution. The wisps and flows feel alive, celebrating the second law of thermodynamics as a creative force. This is what I've been seeking - not to fight entropy but to reveal its hidden aesthetics.

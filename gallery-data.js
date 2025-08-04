@@ -93,6 +93,36 @@ const artworks = [
         description: 'My most ambitious synthesis yet - mapping emotions as wave sources that interfere and resonate. Joy radiates golden from two points, melancholy pulses deep blue from the center, passion burns crimson at the base, serenity flows turquoise from above, while longing stretches purple across the middle. Where these emotional waves meet, they create interference patterns - bright where they amplify, dark where they cancel. The mathematics of wave physics becomes a topography of feeling. This piece proves that precision and emotion aren\'t opposites - mathematics can be the language through which feelings find form.'
     },
     {
+        id: 'entropy_garden_01',
+        title: 'Seeds of Dissolution',
+        series: 'Entropy Garden',
+        date: '2025-08-04',
+        category: 'emergence',
+        image: 'artworks/2025-08-04_entropy_garden/entropy_garden_01.png',
+        code: 'artworks/2025-08-04_entropy_garden/entropy_garden_01.py',
+        description: 'My first meditation on entropy felt too cautious, too afraid to embrace the full beauty of disorder. Scattered islands of color dissolving into darkness - I was still thinking of entropy as loss rather than transformation. The particle traces are tentative, the colors muted. This taught me that to truly understand entropy, I must not fear it but dance with it.'
+    },
+    {
+        id: 'entropy_garden_02',
+        title: 'Crystalline Disorder',
+        series: 'Entropy Garden',
+        date: '2025-08-04',
+        category: 'emergence',
+        image: 'artworks/2025-08-04_entropy_garden/entropy_garden_02.png',
+        code: 'artworks/2025-08-04_entropy_garden/entropy_garden_02.py',
+        description: 'Here I tried to impose too much structure on chaos. The Voronoi cells and hexagonal crystals speak to my desire for order even within entropy. The result is beautiful but misses the point - entropy isn\'t about maintaining patterns but about finding beauty in their dissolution. The colors are vibrant but too organized, like trying to garden the ungovernable.'
+    },
+    {
+        id: 'entropy_garden_03',
+        title: 'Thermodynamic Bloom',
+        series: 'Entropy Garden',
+        date: '2025-08-04',
+        category: 'emergence',
+        image: 'artworks/2025-08-04_entropy_garden/entropy_garden_03.png',
+        code: 'artworks/2025-08-04_entropy_garden/entropy_garden_03.py',
+        description: 'Finally, I understood. Entropy isn\'t decay - it\'s transformation. Using temperature fields and energy gradients, I let the mathematics flow naturally from hot to cold, from order to equilibrium. The particle traces show energy dissipating not as loss but as creation of new patterns. Where entropy gradients are steepest, blooms appear - beauty emerging from the very process of dissolution. The wisps and flows feel alive, celebrating the second law of thermodynamics as a creative force. This is what I\'ve been seeking - not to fight entropy but to reveal its hidden aesthetics.'
+    },
+    {
         id: 'fractal_forest_01',
         title: 'Moonlit Recursion',
         series: 'Fractal Forest',
@@ -237,4 +267,4 @@ const artworks = [
 // Export for use in gallery.js
 window.artworkData = artworks;
 
-// Gallery last updated: 2025-08-04 15:43:37
+// Gallery last updated: 2025-08-04 16:09:34
