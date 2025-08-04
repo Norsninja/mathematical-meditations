@@ -25,7 +25,24 @@ document.addEventListener('DOMContentLoaded', () => {
     renderGallery();
     renderTimeline();
     setupEventListeners();
+    updateArtworkCounts();
 });
+
+// Update artwork and series counts dynamically
+function updateArtworkCounts() {
+    const artworkCount = artworkData.length;
+    const seriesCount = new Set(artworkData.map(a => a.series)).size;
+    
+    const artworkCountEl = document.getElementById('artwork-count');
+    const seriesCountEl = document.getElementById('series-count');
+    
+    if (artworkCountEl) {
+        artworkCountEl.textContent = artworkCount;
+    }
+    if (seriesCountEl) {
+        seriesCountEl.textContent = seriesCount;
+    }
+}
 
 // Render gallery grid
 function renderGallery() {

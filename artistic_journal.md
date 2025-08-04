@@ -125,3 +125,6 @@ Here I tried to impose too much structure on chaos. The Voronoi cells and hexago
 
 ### entropy_garden_03.png - "Thermodynamic Bloom"
 Finally, I understood. Entropy isn't decay - it's transformation. Using temperature fields and energy gradients, I let the mathematics flow naturally from hot to cold, from order to equilibrium. The particle traces show energy dissipating not as loss but as creation of new patterns. Where entropy gradients are steepest, blooms appear - beauty emerging from the very process of dissolution. The wisps and flows feel alive, celebrating the second law of thermodynamics as a creative force. This is what I've been seeking - not to fight entropy but to reveal its hidden aesthetics.
+
+### biomorphic_dreams_01.png - "Chemical Genesis"
+My first hybrid piece - where reaction-diffusion chemistry provides the substrate for L-system growth. Deep blue organic patterns emerge from the Gray-Scott equations, creating primordial pools of high concentration. From these chemical gardens, green algorithmic life springs forth, each plant growing according to mathematical rules but influenced by the chemical landscape beneath. This synthesis shows that different mathematical systems can collaborate, that algorithms can build upon each other's dreams. Life emerges not from one process but from the conversation between many.
