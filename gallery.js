@@ -280,7 +280,9 @@ function closeModals() {
 
 // Format date
 function formatDate(dateString) {
-    const date = new Date(dateString);
+    // Parse as local date, not UTC
+    const [year, month, day] = dateString.split('-').map(Number);
+    const date = new Date(year, month - 1, day);
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     return date.toLocaleDateString('en-US', options);
 }
