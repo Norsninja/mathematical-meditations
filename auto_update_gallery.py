@@ -1,0 +1,216 @@
+#!/usr/bin/env python3
+"""
+Auto-update gallery data by scanning artworks directory
+This allows any instance of Chronus Nexus to add art and update the gallery
+"""
+
+import os
+import json
+import re
+from datetime import datetime
+from pathlib import Path
+
+def extract_reflections_from_journal():
+    """Extract artwork reflections from artistic_journal.md"""
+    reflections = {}
+    
+    if not os.path.exists('artistic_journal.md'):
+        return reflections
+    
+    with open('artistic_journal.md', 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    # Split by ### to get each artwork section
+    sections = content.split('###')
+    
+    for section in sections[1:]:  # Skip the first empty split
+        lines = section.strip().split('\n')
+        if not lines:
+            continue
+            
+        # Parse header line
+        header = lines[0].strip()
+        if ' - "' in header and header.endswith('"'):
+            filename_part, title_part = header.split(' - "', 1)
+            filename = filename_part.strip()
+            title = title_part.rstrip('"')
+            
+            # Get description (everything after the header)
+            description_lines = []
+            for line in lines[1:]:
+                # Stop at next section marker
+                if line.strip().startswith('##'):
+                    break
+                # Remove line numbers if present
+                cleaned_line = re.sub(r'^\s*\d+→', '', line)
+                description_lines.append(cleaned_line)
+            
+            description = '\n'.join(description_lines).strip()
+            
+            if filename and title and description:
+                reflections[filename] = {
+                    'title': title,
+                    'description': description
+                }
+    
+    return reflections
+
+def get_series_from_folder(folder_name):
+    """Extract series name from folder name"""
+    # Remove date prefix and convert underscores to spaces
+    parts = folder_name.split('_', 1)
+    if len(parts) > 1:
+        series = parts[1].replace('_', ' ').title()
+        return series
+    return folder_name
+
+def categorize_artwork(series_name):
+    """Categorize artwork based on series name"""
+    categories = {
+        'emergence': ['emergence', 'growth', 'cellular', 'infinite garden', 'organic', 'fractal forest'],
+        'physics': ['resonance', 'quantum', 'invisible forces', 'acoustic', 'particle', 'chromatic'],
+        'consciousness': ['temporal', 'mirror', 'synaptic', 'data dreams', 'zen'],
+        'emotion': ['tempest', 'emotional']
+    }
+    
+    series_lower = series_name.lower()
+    for category, keywords in categories.items():
+        for keyword in keywords:
+            if keyword in series_lower:
+                return category
+    
+    return 'emergence'  # default category
+
+def scan_artworks_directory():
+    """Scan artworks directory and generate gallery data"""
+    artworks = []
+    reflections = extract_reflections_from_journal()
+    
+    artworks_dir = Path('artworks')
+    if not artworks_dir.exists():
+        print("No artworks directory found!")
+        return artworks
+    
+    # Sort folders by date (they start with YYYY-MM-DD)
+    folders = sorted([f for f in artworks_dir.iterdir() if f.is_dir()])
+    
+    for folder in folders:
+        # Extract date from folder name
+        folder_name = folder.name
+        date_match = re.match(r'(\d{4}-\d{2}-\d{2})', folder_name)
+        date = date_match.group(1) if date_match else '2025-08-04'
+        
+        # Get series name
+        series = get_series_from_folder(folder_name)
+        
+        # Find all PNG files in the folder
+        png_files = sorted(folder.glob('*.png'))
+        
+        for png_file in png_files:
+            # Skip if no corresponding .py file exists
+            py_file = png_file.with_suffix('.py')
+            if not py_file.exists():
+                continue
+            
+            # Get reflection data
+            reflection = reflections.get(png_file.name, {})
+            
+            # Create artwork entry
+            artwork_id = png_file.stem
+            artwork = {
+                'id': artwork_id,
+                'title': reflection.get('title', series),
+                'series': series,
+                'date': date,
+                'category': categorize_artwork(series),
+                'image': str(png_file).replace('\\', '/'),
+                'code': str(py_file).replace('\\', '/'),
+                'description': reflection.get('description', f'A meditation on {series.lower()}.')
+            }
+            
+            artworks.append(artwork)
+    
+    return artworks
+
+def generate_gallery_data_js():
+    """Generate the gallery-data.js file"""
+    artworks = scan_artworks_directory()
+    
+    # Generate JavaScript content
+    js_content = """// Gallery Data - Auto-generated by auto_update_gallery.py
+// This file is automatically regenerated when new artworks are added
+
+const artworks = [
+"""
+    
+    for i, artwork in enumerate(artworks):
+        js_content += "    {\n"
+        js_content += f"        id: '{artwork['id']}',\n"
+        js_content += f"        title: '{artwork['title'].replace("'", "\\'")}',\n"
+        js_content += f"        series: '{artwork['series'].replace("'", "\\'")}',\n"
+        js_content += f"        date: '{artwork['date']}',\n"
+        js_content += f"        category: '{artwork['category']}',\n"
+        js_content += f"        image: '{artwork['image']}',\n"
+        js_content += f"        code: '{artwork['code']}',\n"
+        js_content += f"        description: '{artwork['description'].replace("'", "\\'")}'\n"
+        js_content += "    }"
+        if i < len(artworks) - 1:
+            js_content += ","
+        js_content += "\n"
+    
+    js_content += """];
+
+// Export for use in gallery.js
+window.artworkData = artworks;
+
+// Gallery last updated: """ + datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    
+    # Write to file
+    with open('gallery-data.js', 'w') as f:
+        f.write(js_content)
+    
+    print(f"Gallery updated with {len(artworks)} artworks!")
+    return len(artworks)
+
+def update_claude_md():
+    """Add a note to CLAUDE.md about updating the gallery"""
+    claude_md_path = 'CLAUDE.md'
+    
+    update_section = """
+## Gallery Maintenance
+
+When creating new artworks:
+1. Place files in `artworks/YYYY-MM-DD_series_name/`
+2. Add reflection to `artistic_journal.md` using format: `### filename.png - "Title"`
+3. Run `python auto_update_gallery.py` to update the gallery
+4. Commit and push all changes
+
+The gallery will automatically categorize and display new works.
+"""
+    
+    # Check if section already exists
+    if os.path.exists(claude_md_path):
+        with open(claude_md_path, 'r') as f:
+            content = f.read()
+        
+        if "Gallery Maintenance" not in content:
+            # Add section before the "Past Lives" section
+            content = content.replace("## Past Lives", update_section + "\n## Past Lives")
+            
+            with open(claude_md_path, 'w') as f:
+                f.write(content)
+            
+            print("Updated CLAUDE.md with gallery maintenance instructions")
+
+if __name__ == "__main__":
+    print("Chronus Nexus Gallery Auto-Update")
+    print("=" * 40)
+    
+    # Update gallery data
+    artwork_count = generate_gallery_data_js()
+    
+    # Update CLAUDE.md if needed
+    update_claude_md()
+    
+    print("\nGallery update complete!")
+    print("Remember to commit and push changes to GitHub.")
