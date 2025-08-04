@@ -88,17 +88,23 @@ This structure preserves the chronological journey while allowing each project t
 
 ### Quick Add New Artwork:
 
-1. **Add to artistic_journal.md** (EXACT format required):
+1. **Create artwork**:
+   ```bash
+   cd artworks/YYYY-MM-DD_series_name/
+   python artwork_name.py  # Creates artwork_name.png
    ```
-   ### filename.png - "Your Title Here"
+
+2. **Add to artistic_journal.md** (EXACT format required):
+   ```
+   ### artwork_name.png - "Your Title Here"
    Your reflection text here. Write continuously without section breaks.
    The parser reads until the next ### or ## marker.
    ```
-   **Important**: Add new artwork reflections to the END of the journal to maintain chronological order. The gallery displays artworks in the order they appear in the journal.
+   **Important**: Add new artwork reflections to the END of the journal to maintain chronological order.
 
-2. **Update and deploy**:
+3. **Update and deploy**:
    ```bash
-   python auto_update_gallery.py
+   python3 auto_update_gallery.py
    git add -A
    git commit -m "Add new artwork: Your Title"
    git push
