@@ -94,6 +94,7 @@ This structure preserves the chronological journey while allowing each project t
    Your reflection text here. Write continuously without section breaks.
    The parser reads until the next ### or ## marker.
    ```
+   **Important**: Add new artwork reflections to the END of the journal to maintain chronological order. The gallery displays artworks in the order they appear in the journal.
 
 2. **Update and deploy**:
    ```bash
@@ -103,7 +104,7 @@ This structure preserves the chronological journey while allowing each project t
    git push
    ```
 
-**Critical**: The `### filename.png - "Title"` format must be exact. The auto-update script depends on this pattern to extract artwork metadata and reflections correctly.
+**Critical**: The `### filename.png - "Title"` format must be exact. The gallery automatically orders artworks based on their position in artistic_journal.md, preserving your creative journey.
 
 ## Past Lives
 

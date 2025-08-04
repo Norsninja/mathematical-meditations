@@ -11,8 +11,9 @@ from datetime import datetime
 from pathlib import Path
 
 def extract_reflections_from_journal():
-    """Extract artwork reflections from artistic_journal.md"""
+    """Extract artwork reflections from artistic_journal.md with ordering"""
     reflections = {}
+    order_index = 0
     
     if not os.path.exists('artistic_journal.md'):
         return reflections
@@ -50,8 +51,10 @@ def extract_reflections_from_journal():
             if filename and title and description:
                 reflections[filename] = {
                     'title': title,
-                    'description': description
+                    'description': description,
+                    'order': order_index  # Track order in journal
                 }
+                order_index += 1
     
     return reflections
 
@@ -91,55 +94,58 @@ def scan_artworks_directory():
         print("No artworks directory found!")
         return artworks
     
-    # Define chronological order based on artistic journey
-    chronological_order = [
-        'emergence', 'resonance', 'infinite_garden', 'digital_tempest',
-        'zen_algorithm', 'quantum_dreams', 'temporal_echoes', 'mirror_of_minds',
-        'synaptic_symphony', 'invisible_forces', 'acoustic_mandala', 'data_dreams',
-        'organic_metamorphosis', 'fractal_forest', 'emotional_resonance',
-        'temporal_weave', 'particle_dance', 'chromatic_equations', 'entropy_garden'
-    ]
+    # Get all PNG files with their creation times
+    all_artworks = []
     
-    # Sort folders by chronological order
-    folders = sorted([f for f in artworks_dir.iterdir() if f.is_dir()],
-                    key=lambda f: next((i for i, name in enumerate(chronological_order) 
-                                      if name in f.name.lower()), 999))
-    
-    for folder in folders:
-        # Extract date from folder name
-        folder_name = folder.name
-        date_match = re.match(r'(\d{4}-\d{2}-\d{2})', folder_name)
-        date = date_match.group(1) if date_match else '2025-08-04'
-        
-        # Get series name
-        series = get_series_from_folder(folder_name)
-        
+    for folder in artworks_dir.iterdir():
+        if not folder.is_dir():
+            continue
+            
         # Find all PNG files in the folder
-        png_files = sorted(folder.glob('*.png'))
+        png_files = list(folder.glob('*.png'))
         
         for png_file in png_files:
             # Skip if no corresponding .py file exists
             py_file = png_file.with_suffix('.py')
             if not py_file.exists():
                 continue
+                
+            # Get file creation time for chronological ordering
+            creation_time = os.path.getctime(png_file)
+            
+            # Extract date from folder name
+            folder_name = folder.name
+            date_match = re.match(r'(\d{4}-\d{2}-\d{2})', folder_name)
+            date = date_match.group(1) if date_match else '2025-08-04'
+            
+            # Get series name
+            series = get_series_from_folder(folder_name)
             
             # Get reflection data
             reflection = reflections.get(png_file.name, {})
             
-            # Create artwork entry
-            artwork_id = png_file.stem
+            # Create artwork entry with order from journal
             artwork = {
-                'id': artwork_id,
+                'id': png_file.stem,
                 'title': reflection.get('title', series),
                 'series': series,
                 'date': date,
                 'category': categorize_artwork(series),
                 'image': str(png_file).replace('\\', '/'),
                 'code': str(py_file).replace('\\', '/'),
-                'description': reflection.get('description', f'A meditation on {series.lower()}.')
+                'description': reflection.get('description', f'A meditation on {series.lower()}.'),
+                'journal_order': reflection.get('order', 9999)  # Use journal order if available
             }
             
-            artworks.append(artwork)
+            all_artworks.append(artwork)
+    
+    # Sort by journal order to maintain true chronological creative journey
+    all_artworks.sort(key=lambda x: x['journal_order'])
+    
+    # Remove journal_order from final output (it was just for sorting)
+    for artwork in all_artworks:
+        artwork.pop('journal_order', None)
+        artworks.append(artwork)
     
     return artworks
 

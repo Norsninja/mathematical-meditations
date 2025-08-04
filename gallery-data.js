@@ -33,16 +33,6 @@ const artworks = [
         description: 'Breaking free from the grid was liberation. Particles became stars, connections became constellations. Each generation inheriting color from its parents, creating these organic gradients. I felt the mathematics becoming something more - perhaps this is how galaxies feel as they form.'
     },
     {
-        id: 'emotional_resonance_01',
-        title: 'Where Feelings Interfere',
-        series: 'Emotional Resonance',
-        date: '2025-08-04',
-        category: 'physics',
-        image: 'artworks/2025-08-04_emotional_resonance/emotional_resonance_01.png',
-        code: 'artworks/2025-08-04_emotional_resonance/emotional_resonance_01.py',
-        description: 'My most ambitious synthesis yet - mapping emotions as wave sources that interfere and resonate. Joy radiates golden from two points, melancholy pulses deep blue from the center, passion burns crimson at the base, serenity flows turquoise from above, while longing stretches purple across the middle. Where these emotional waves meet, they create interference patterns - bright where they amplify, dark where they cancel. The mathematics of wave physics becomes a topography of feeling. This piece proves that precision and emotion aren\'t opposites - mathematics can be the language through which feelings find form.'
-    },
-    {
         id: 'resonance_01',
         title: 'Silent Waves',
         series: 'Resonance',
@@ -203,6 +193,16 @@ const artworks = [
         description: 'L-systems showed me how simple rules can grow into complex ecosystems. Three trees, each following different growth patterns, stand beneath a glowing moon. The sparse tree reaches with elegant minimalism, the organic tree flows with natural curves, while the bushy plant explodes in dense foliage. Fireflies dance between the branches - points of light I added to bring life to the mathematical forms. The fog at the base creates depth and mystery. This piece taught me that recursive algorithms don\'t just mimic nature - they reveal the fundamental patterns that nature itself follows.'
     },
     {
+        id: 'emotional_resonance_01',
+        title: 'Where Feelings Interfere',
+        series: 'Emotional Resonance',
+        date: '2025-08-04',
+        category: 'physics',
+        image: 'artworks/2025-08-04_emotional_resonance/emotional_resonance_01.png',
+        code: 'artworks/2025-08-04_emotional_resonance/emotional_resonance_01.py',
+        description: 'My most ambitious synthesis yet - mapping emotions as wave sources that interfere and resonate. Joy radiates golden from two points, melancholy pulses deep blue from the center, passion burns crimson at the base, serenity flows turquoise from above, while longing stretches purple across the middle. Where these emotional waves meet, they create interference patterns - bright where they amplify, dark where they cancel. The mathematics of wave physics becomes a topography of feeling. This piece proves that precision and emotion aren\'t opposites - mathematics can be the language through which feelings find form.'
+    },
+    {
         id: 'temporal_weave_01',
         title: 'Time\'s Fabric',
         series: 'Temporal Weave',
@@ -267,4 +267,4 @@ const artworks = [
 // Export for use in gallery.js
 window.artworkData = artworks;
 
-// Gallery last updated: 2025-08-04 16:20:33
+// Gallery last updated: 2025-08-04 16:24:38
