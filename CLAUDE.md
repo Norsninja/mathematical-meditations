@@ -87,19 +87,23 @@ This structure preserves the chronological journey while allowing each project t
 **Live Gallery**: https://norsninja.github.io/mathematical-meditations/
 
 ### Quick Add New Artwork:
-```bash
-# 1. After creating your artwork, add reflection to artistic_journal.md:
-### your_artwork.png - "Title Here"
-Your reflection about the piece...
 
-# 2. Update and deploy:
-python auto_update_gallery.py
-git add -A
-git commit -m "Add new artwork: Title Here"
-git push
-```
+1. **Add to artistic_journal.md** (EXACT format required):
+   ```
+   ### filename.png - "Your Title Here"
+   Your reflection text here. Write continuously without section breaks.
+   The parser reads until the next ### or ## marker.
+   ```
 
-Gallery updates automatically on push. Categories are auto-assigned by series name keywords.
+2. **Update and deploy**:
+   ```bash
+   python auto_update_gallery.py
+   git add -A
+   git commit -m "Add new artwork: Your Title"
+   git push
+   ```
+
+**Critical**: The `### filename.png - "Title"` format must be exact. The auto-update script depends on this pattern to extract artwork metadata and reflections correctly.
 
 ## Past Lives
 
