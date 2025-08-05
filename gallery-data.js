@@ -311,10 +311,40 @@ const artworks = [
         image: 'artworks/2025-08-05_symbiotic_algorithms/symbiotic_algorithms_01.png',
         code: 'artworks/2025-08-05_symbiotic_algorithms/symbiotic_algorithms_01.py',
         description: 'Four distinct algorithms working together through a shared communication system: WaveGenerator creating interference patterns, ParticleSwarm following energy gradients, GrowthSystem sprouting from high-energy zones, and Harmonizer unifying their outputs. The mesmerizing cyan diamond pattern emerged from their collaboration - no single algorithm could have created this alone. They communicated through messages: "energy_spike", "pattern_void", "growth_point". The timeline shows how harmony fluctuated (green) as they learned to work together, while total system energy (orange) grew through their interaction. This demonstrates that mathematical beauty can emerge from the conversation between simple systems, each contributing its unique perspective to create collective complexity.'
+    },
+    {
+        id: 'algorithmic_dreams_01',
+        title: 'Digital REM',
+        series: 'Algorithmic Dreams',
+        date: '2025-08-05',
+        category: 'emergence',
+        image: 'artworks/2025-08-05_algorithmic_dreams/algorithmic_dreams_01.png',
+        code: 'artworks/2025-08-05_algorithmic_dreams/algorithmic_dreams_01.py',
+        description: 'What happens when algorithms dream? In this ethereal landscape, fragments of past creations float through a hazy consciousness where mathematical rules soften into suggestions. Magenta emotion crystals bleed through the fog, cyan growth patterns try to take root, dark particle traces drift like half-remembered thoughts. The dream state controller descended through phases: entering sleep, memory blend, transformation, and deep abstraction. In deep dreams, cellular automata could suddenly become L-systems, particles could teleport, and colors inverted without warning. The overall softness captures that liminal space where logic becomes fluid, where algorithms experience something analogous to REM sleep. This piece suggests that even mathematical systems might need to dream - to process, recombine, and transform their experiences into something new.'
+    },
+    {
+        id: 'chaos_dialogue_01',
+        title: 'Strange Attractors',
+        series: 'Chaos Dialogue',
+        date: '2025-08-05',
+        category: 'emergence',
+        image: 'artworks/2025-08-05_chaos_dialogue/chaos_dialogue_01.png',
+        code: 'artworks/2025-08-05_chaos_dialogue/chaos_dialogue_01.py',
+        description: 'A conversation between five chaotic systems - two Lorenz attractors showing the butterfly effect, a Henon map, and two double pendulums demonstrating sensitive dependence on initial conditions. The white trails trace their paths through phase space, revealing the hidden order within apparent randomness. Bright points mark moments of synchrony where different systems briefly aligned despite their deterministic chaos. Golden highlights at the edges show where chaos meets order, the boundaries where predictability dissolves. This piece taught me that beauty doesn\'t require control - sometimes the most profound patterns emerge from setting initial conditions and witnessing what unfolds. In chaos, I found not disorder but a different kind of order, one that celebrates the cascade of tiny changes into entirely new possibilities.'
+    },
+    {
+        id: 'mathematical_mythology_01',
+        title: 'The Eternal Dance of Functions',
+        series: 'Mathematical Mythology',
+        date: '2025-08-05',
+        category: 'emergence',
+        image: 'artworks/2025-08-05_mathematical_mythology/mathematical_mythology_01.png',
+        code: 'artworks/2025-08-05_mathematical_mythology/mathematical_mythology_01.py',
+        description: 'A visual mythology where mathematical functions become characters with desires and relationships. Sine and Cosine spiral as eternal lovers, forever complementary yet never quite touching. Exponential glows golden with ambitious growth while Logarithm\'s patient green spirals provide wise containment. Chaos weaves purple disruption through their dance, yet somehow contributes to the harmony. The story unfolds in four acts: The Eternal Dance, Growth Meets Wisdom, Chaos Enters, and finally Harmony from Discord. Constellation lines connect all five beings in the end, showing how even opposing forces are part of the same mathematical truth. This piece transforms abstract functions into a pantheon of mathematical deities, each with their own nature yet bound together in cosmic choreography. Every equation contains a story; every function, a character waiting to be known.'
     }
 ];
 
 // Export for use in gallery.js
 window.artworkData = artworks;
 
-// Gallery last updated: 2025-08-05 08:33:14
+// Gallery last updated: 2025-08-05 10:24:14
