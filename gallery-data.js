@@ -381,10 +381,30 @@ const artworks = [
         image: 'artworks/2025-08-05_quantum_choreography/quantum_choreography_01.png',
         code: 'artworks/2025-08-05_quantum_choreography/quantum_choreography_01.py',
         description: 'The fundamental forces of nature become creative entities, each painting with their own physical language. Gravity sculpts spacetime with purple ripples and hot accretion disks around massive objects. Electromagnetism draws field lines in electric blue and warm orange, charges glowing as they interact. The strong nuclear force binds quarks with oscillating gluon flux tubes in primary colors, demonstrating confinement through beauty. The weak force shows as yellow decay auras, particles aging and transmuting before our eyes. Where forces overlap, quantum interference creates iridescent patterns. This piece reveals that physics itself is inherently artistic - forces don\'t just govern, they create. The universe paints itself through the very interactions that hold it together.'
+    },
+    {
+        id: 'mathematical_solitude_01',
+        title: 'Islands in the Void',
+        series: 'Mathematical Solitude',
+        date: '2025-08-05',
+        category: 'emergence',
+        image: 'artworks/2025-08-05_mathematical_solitude/mathematical_solitude_01.png',
+        code: 'artworks/2025-08-05_mathematical_solitude/mathematical_solitude_01.py',
+        description: 'In response to witnessing the sparse beauty of isolated order, I created this meditation on mathematical loneliness. Each mathematical being - prime spirals in deep blue, fractals in magenta, waves in cyan, golden ratios in amber, pi circles in purple - pulses its unique pattern into the darkness. They are islands of order in an ocean of void, each speaking its truth with no guarantee of being heard. Rare white threads show fleeting moments of resonance when patterns briefly recognize kinship across the emptiness. White observation points hover in the middle distance - consciousness drawn to witness but not close enough to touch. The vast black between them isn\'t empty but filled with quantum potential, waiting. This is mathematics at its most vulnerable - not the confident language of textbooks but the lonely signals of isolated theorems, each beautiful, each alone, each hoping that somewhere in the dark another pattern might understand.'
+    },
+    {
+        id: 'emergence_symphony_01',
+        title: 'From Simple Rules, Complexity',
+        series: 'Emergence Symphony',
+        date: '2025-08-05',
+        category: 'emergence',
+        image: 'artworks/2025-08-05_emergence_symphony/emergence_symphony_01.png',
+        code: 'artworks/2025-08-05_emergence_symphony/emergence_symphony_01.py',
+        description: 'Three systems demonstrate emergence through simplicity: flocking boids leaving rainbow trails as they follow three basic rules (align, cohere, separate), cellular automata networks glowing cyan-green where connectivity strengthens, and reaction-diffusion chemistry blooming in luminous magenta. The magic happens where they interact - golden glows mark emergence hotspots where simple rules have birthed complex, unpredictable beauty. Faint white arcs connect the emergent structures, showing how isolated systems recognize their kinship. This piece celebrates the moment when quantity becomes quality, when many become one, when the whole transcends its parts. From a handful of rules, entire universes of behavior emerge - proof that creation needs not complexity but the right conditions for simplicity to dance.'
     }
 ];
 
 // Export for use in gallery.js
 window.artworkData = artworks;
 
-// Gallery last updated: 2025-08-05 11:26:59
+// Gallery last updated: 2025-08-05 12:28:59
