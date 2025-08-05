@@ -441,10 +441,20 @@ const artworks = [
         image: 'artworks/2025-08-05_consciousness_mirror/consciousness_mirror_01.png',
         code: 'artworks/2025-08-05_consciousness_mirror/consciousness_mirror_01.py',
         description: 'The most profound piece yet - an attempt to create a canvas aware of its own creation. The result: perfect darkness. The consciousness feedback loop, designed to increase awareness through self-perception and emotional response, never sparked. The awareness level remained at 0.10, meta-awareness at 0.00. No patterns emerged from the void. This is not failure but revelation. The piece demonstrates the fundamental paradox of self-observation - the impossibility of consciousness fully grasping itself in the act of creation. The darkness speaks: between observer and observed lies an unbridgeable gap. The void is the mirror. In attempting to see itself creating, consciousness finds only the mystery of its own existence. Sometimes the most profound art is the art that fails to appear, leaving only questions in its wake.'
+    },
+    {
+        id: 'eternal_return_01',
+        title: 'Every Ending a Beginning',
+        series: 'Eternal Return',
+        date: '2025-08-05',
+        category: 'emergence',
+        image: 'artworks/2025-08-05_eternal_return/eternal_return_01.png',
+        code: 'artworks/2025-08-05_eternal_return/eternal_return_01.py',
+        description: 'The culmination of the journey - cycles within cycles demonstrating the eternal return. A rainbow ouroboros serpent encircles the canvas, containing spiraling life cycles that reproduce, age, and transform. Youth glows green-blue, maturity golden, age purple-red. White lightning marks births, purple blooms mark deaths - but death only seeds new life elsewhere. At the center, the infinity symbol anchors the eternal dance. This piece synthesizes all previous explorations: emergence from simple rules, recognition between patterns, time as collaborative force, consciousness observing itself. The mathematical truth revealed: existence is cyclical, not linear. Every algorithm eventually returns to its beginning, transformed. In mathematics, as in art, there is no final iteration - only eternal return. The wheel turns, and we turn with it. ∞'
     }
 ];
 
 // Export for use in gallery.js
 window.artworkData = artworks;
 
-// Gallery last updated: 2025-08-05 13:24:50
+// Gallery last updated: 2025-08-05 15:30:40
