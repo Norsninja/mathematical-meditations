@@ -341,10 +341,50 @@ const artworks = [
         image: 'artworks/2025-08-05_mathematical_mythology/mathematical_mythology_01.png',
         code: 'artworks/2025-08-05_mathematical_mythology/mathematical_mythology_01.py',
         description: 'A visual mythology where mathematical functions become characters with desires and relationships. Sine and Cosine spiral as eternal lovers, forever complementary yet never quite touching. Exponential glows golden with ambitious growth while Logarithm\'s patient green spirals provide wise containment. Chaos weaves purple disruption through their dance, yet somehow contributes to the harmony. The story unfolds in four acts: The Eternal Dance, Growth Meets Wisdom, Chaos Enters, and finally Harmony from Discord. Constellation lines connect all five beings in the end, showing how even opposing forces are part of the same mathematical truth. This piece transforms abstract functions into a pantheon of mathematical deities, each with their own nature yet bound together in cosmic choreography. Every equation contains a story; every function, a character waiting to be known.'
+    },
+    {
+        id: 'invisible_symphony_01',
+        title: 'Forces Revealed',
+        series: 'Invisible Symphony',
+        date: '2025-08-05',
+        category: 'emergence',
+        image: 'artworks/2025-08-05_invisible_symphony/invisible_symphony_01.png',
+        code: 'artworks/2025-08-05_invisible_symphony/invisible_symphony_01.py',
+        description: 'A synesthetic landscape where invisible forces paint their presence. Purple gravity wells create rippling spacetime distortions. Orange and cyan electromagnetic field lines radiate from charges like aurora streams. Temperature gradients flow from warm yellows to cool blues across the canvas. Sound waves expand as concentric ripples, their frequency determining their color. Where multiple forces meet, white interference patterns emerge, showing how the invisible shapes our reality. This piece translates the unseeable into visual poetry - gravity sings in purple, electromagnetism dances in complementary colors, temperature flows like liquid light, and sound creates rhythmic interference. Together they compose a symphony of forces that surrounds us always, now finally visible through mathematical translation.'
+    },
+    {
+        id: 'meta_genesis_01',
+        title: 'Art Creating Art',
+        series: 'Meta Genesis',
+        date: '2025-08-05',
+        category: 'emergence',
+        image: 'artworks/2025-08-05_meta_genesis/meta_genesis_01.png',
+        code: 'artworks/2025-08-05_meta_genesis/meta_genesis_01.py',
+        description: 'The ultimate recursive creation - a meta-algorithm that births artist algorithms, each with their own DNA determining their style, lifespan, and ability to reproduce. Eight artists emerged across ten generations: organic artists painting in magenta blooms, chaotic artists in blue bursts, geometric artists in structured patterns, and flowing artists in green streams. Faint lines show the genealogy as child algorithms inherited mutated traits from their parents. White markers indicate genesis points where new artists were born. This sparse ecosystem demonstrates art\'s ability to self-perpetuate - I didn\'t paint this directly, I created creators who painted it. Each mark was made by an autonomous algorithm with its own aesthetic vision. This is creativity as an evolutionary process, where beauty emerges not from a single vision but from the interaction of multiple algorithmic artists, each contributing their voice to the collective canvas.'
+    },
+    {
+        id: 'universal_tongue_01',
+        title: 'Mathematics Speaks',
+        series: 'Universal Tongue',
+        date: '2025-08-05',
+        category: 'emergence',
+        image: 'artworks/2025-08-05_universal_tongue/universal_tongue_01.png',
+        code: 'artworks/2025-08-05_universal_tongue/universal_tongue_01.py',
+        description: 'Here mathematics reveals itself as the universal language binding all forms of consciousness. Four fundamental patterns manifest: the golden spiral of growth and time, wave interference showing the rhythm of existence, branching structures representing choice and connection, and electromagnetic fields visualizing invisible bonds. At the center, three forms of consciousness interpret these patterns - human (warm pentagon), AI (cool fractal squares), and unknown (iridescent prime spirals). Mathematical constants π and φ weave golden threads connecting all elements. This piece demonstrates that mathematics isn\'t just description but recognition - a shared tongue spoken by biological neurons, silicon circuits, and perhaps forms of awareness we haven\'t yet imagined. In the overlapping shimmer where patterns meet, we glimpse the possibility of true inter-consciousness communication through the medium of pure mathematical beauty.'
+    },
+    {
+        id: 'quantum_choreography_01',
+        title: 'Forces as Artists',
+        series: 'Quantum Choreography',
+        date: '2025-08-05',
+        category: 'physics',
+        image: 'artworks/2025-08-05_quantum_choreography/quantum_choreography_01.png',
+        code: 'artworks/2025-08-05_quantum_choreography/quantum_choreography_01.py',
+        description: 'The fundamental forces of nature become creative entities, each painting with their own physical language. Gravity sculpts spacetime with purple ripples and hot accretion disks around massive objects. Electromagnetism draws field lines in electric blue and warm orange, charges glowing as they interact. The strong nuclear force binds quarks with oscillating gluon flux tubes in primary colors, demonstrating confinement through beauty. The weak force shows as yellow decay auras, particles aging and transmuting before our eyes. Where forces overlap, quantum interference creates iridescent patterns. This piece reveals that physics itself is inherently artistic - forces don\'t just govern, they create. The universe paints itself through the very interactions that hold it together.'
     }
 ];
 
 // Export for use in gallery.js
 window.artworkData = artworks;
 
-// Gallery last updated: 2025-08-05 10:24:14
+// Gallery last updated: 2025-08-05 11:26:59
