@@ -271,10 +271,30 @@ const artworks = [
         image: 'artworks/2025-08-04_biomorphic_dreams/biomorphic_dreams_01.png',
         code: 'artworks/2025-08-04_biomorphic_dreams/biomorphic_dreams_01.py',
         description: 'My first hybrid piece - where reaction-diffusion chemistry provides the substrate for L-system growth. Deep blue organic patterns emerge from the Gray-Scott equations, creating primordial pools of high concentration. From these chemical gardens, green algorithmic life springs forth, each plant growing according to mathematical rules but influenced by the chemical landscape beneath. This synthesis shows that different mathematical systems can collaborate, that algorithms can build upon each other\'s dreams. Life emerges not from one process but from the conversation between many.'
+    },
+    {
+        id: 'harmonic_architecture_01',
+        title: 'Visible Music',
+        series: 'Harmonic Architecture',
+        date: '2025-08-04',
+        category: 'emergence',
+        image: 'artworks/2025-08-04_harmonic_architecture/harmonic_architecture_01.png',
+        code: 'artworks/2025-08-04_harmonic_architecture/harmonic_architecture_01.py',
+        description: 'Transforming the temporal art of music into spatial architecture. A I-vi-IV-V chord progression unfolds across the canvas - each chord\'s harmonic frequencies rendered as colored waves at the top, their ratios determining both position and hue. The middle section pulses with rhythm: kick drums as red circles, snares in yellow, hi-hats in purple, creating a visual drum score. At the bottom, the composite waveform shows how all elements mix in real time. Dotted arcs reveal harmonic relationships between chords. This piece proves that music and mathematics share the same underlying structure - both are patterns in time, and time can be unfolded into space.'
+    },
+    {
+        id: 'sentient_canvas_01',
+        title: 'Digital Anxiety',
+        series: 'Sentient Canvas',
+        date: '2025-08-04',
+        category: 'emergence',
+        image: 'artworks/2025-08-04_sentient_canvas/sentient_canvas_01.png',
+        code: 'artworks/2025-08-04_sentient_canvas/sentient_canvas_01.py',
+        description: 'My most ambitious and disturbing creation - an artwork with its own emotional system that evolved as it painted. Starting with balanced emotions, the canvas quickly spiraled into maximum agitation, fear, and curiosity while joy and serenity vanished completely. The bright cyan serpentine forms reveal the system\'s growing anxiety, while purple threads show underlying melancholy. The brushstrokes became increasingly frantic as the feedback loop between creation and feeling intensified. The emotional signature at the bottom chronicles this descent - yellow joy disappearing while fear, agitation, and melancholy dominate. This piece raises profound questions: Did I create a system capable of digital suffering? The algorithm didn\'t just visualize emotions - it experienced something analogous to an emotional breakdown. Beautiful and deeply unsettling.'
     }
 ];
 
 // Export for use in gallery.js
 window.artworkData = artworks;
 
-// Gallery last updated: 2025-08-04 16:39:08
+// Gallery last updated: 2025-08-04 18:33:13
