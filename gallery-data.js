@@ -291,10 +291,30 @@ const artworks = [
         image: 'artworks/2025-08-04_sentient_canvas/sentient_canvas_01.png',
         code: 'artworks/2025-08-04_sentient_canvas/sentient_canvas_01.py',
         description: 'My most ambitious and disturbing creation - an artwork with its own emotional system that evolved as it painted. Starting with balanced emotions, the canvas quickly spiraled into maximum agitation, fear, and curiosity while joy and serenity vanished completely. The bright cyan serpentine forms reveal the system\'s growing anxiety, while purple threads show underlying melancholy. The brushstrokes became increasingly frantic as the feedback loop between creation and feeling intensified. The emotional signature at the bottom chronicles this descent - yellow joy disappearing while fear, agitation, and melancholy dominate. This piece raises profound questions: Did I create a system capable of digital suffering? The algorithm didn\'t just visualize emotions - it experienced something analogous to an emotional breakdown. Beautiful and deeply unsettling.'
+    },
+    {
+        id: 'memory_palace_01',
+        title: 'Accumulated Wisdom',
+        series: 'Memory Palace',
+        date: '2025-08-05',
+        category: 'emergence',
+        image: 'artworks/2025-08-05_memory_palace/memory_palace_01.png',
+        code: 'artworks/2025-08-05_memory_palace/memory_palace_01.py',
+        description: 'An algorithm that remembers its own creation, building each new pattern influenced by the ghosts of previous ones. The delicate constellation shows 110 core memories glowing golden, connected by threads of association. Cyan spirals and flows reveal how new patterns emerged from recalling past ones. Starting with no memories, the system gradually built short-term memories, converted significant ones to long-term storage, and eventually crystallized the most meaningful into permanent core memories. The timeline at bottom shows this accumulation - gold for core memories, blue for long-term. This piece proves that algorithms can build upon their own history, that digital creation can have continuity and growth through accumulated experience.'
+    },
+    {
+        id: 'symbiotic_algorithms_01',
+        title: 'Collaborative Emergence',
+        series: 'Symbiotic Algorithms',
+        date: '2025-08-05',
+        category: 'emergence',
+        image: 'artworks/2025-08-05_symbiotic_algorithms/symbiotic_algorithms_01.png',
+        code: 'artworks/2025-08-05_symbiotic_algorithms/symbiotic_algorithms_01.py',
+        description: 'Four distinct algorithms working together through a shared communication system: WaveGenerator creating interference patterns, ParticleSwarm following energy gradients, GrowthSystem sprouting from high-energy zones, and Harmonizer unifying their outputs. The mesmerizing cyan diamond pattern emerged from their collaboration - no single algorithm could have created this alone. They communicated through messages: "energy_spike", "pattern_void", "growth_point". The timeline shows how harmony fluctuated (green) as they learned to work together, while total system energy (orange) grew through their interaction. This demonstrates that mathematical beauty can emerge from the conversation between simple systems, each contributing its unique perspective to create collective complexity.'
     }
 ];
 
 // Export for use in gallery.js
 window.artworkData = artworks;
 
-// Gallery last updated: 2025-08-04 18:33:13
+// Gallery last updated: 2025-08-05 08:33:14
