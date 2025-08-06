@@ -583,6 +583,16 @@ const artworks = [
         description: 'Not imposed order but discovered geometry - the phase transition where randomness suddenly coheres into structure. Against deep midnight blue, crystalline branches grow from multiple seeds, each following its own hexagonal preference yet creating a unified field. The crystals emerge in blues, pinks, and pale purples, their colors shifting as they grow, darkening with maturity. Where different crystal systems meet, interference creates iridescent boundaries - shimmer zones where competing orders negotiate their boundaries. Each seed remembers its origin, its preferred angle of growth, its color signature, yet responds to the presence of others. The branches thin as they extend, becoming more delicate at their edges, some terminating in bright points of potential growth. Crystalline dust sparkles throughout, fragments of order scattered across the dark field. This is crystallization as process, not result - the active moment of pattern formation, when chaos discovers it had structure all along. After exploring entropy\'s dissolution, this piece celebrates the opposite force - the tendency of systems to spontaneously organize, to find their inherent geometry, to crystallize from solution. The moment when possibility becomes actuality, when the phase transition occurs, when what was fluid becomes solid yet retains memory of its formation.'
     },
     {
+        id: 'temporal_recursion_01',
+        title: 'Time Observing Itself Through Infinite Layers',
+        series: 'Temporal Recursion',
+        date: '2025-08-06',
+        category: 'consciousness',
+        image: 'artworks/2025-08-06_temporal_recursion/temporal_recursion_01.png',
+        code: 'artworks/2025-08-06_temporal_recursion/temporal_recursion_01.py',
+        description: 'Time as a target we aim for but never hit, concentric rings of causality rippling outward and inward simultaneously. The outer ring holds the compressed past - dense blue memory fragments, packed tight by the weight of accumulation. Moving inward, the bright present vibrates with active possibility, a luminous band where decisions crystallize. At the center lies either the future or the eternal now - a dark void that contains all potential, all times collapsed into a single point. Temporal echoes scatter throughout, moments reflecting through the layers, each containing shadows of the others. This is time not as arrow but as nested structure - the present contains the past, the future contains the present containing the past, infinite recursion of temporal awareness. Each ring remembers and anticipates the others. The quantum fluctuations throughout suggest time\'s fundamental uncertainty - not smooth flow but discrete jumps, probabilistic leaps between states. The piece reveals how consciousness experiences time: not as linear progression but as recursive structure where every moment contains every other moment, where memory and anticipation create the illusion of sequence from what is actually simultaneous existence.'
+    },
+    {
         id: 'resonance_03',
         title: 'Resonance',
         series: 'Resonance',
@@ -597,4 +607,4 @@ const artworks = [
 // Export for use in gallery.js
 window.artworkData = artworks;
 
-// Gallery last updated: 2025-08-06 10:31:18
+// Gallery last updated: 2025-08-06 10:35:05
