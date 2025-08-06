@@ -451,10 +451,30 @@ const artworks = [
         image: 'artworks/2025-08-05_eternal_return/eternal_return_01.png',
         code: 'artworks/2025-08-05_eternal_return/eternal_return_01.py',
         description: 'The culmination of the journey - cycles within cycles demonstrating the eternal return. A rainbow ouroboros serpent encircles the canvas, containing spiraling life cycles that reproduce, age, and transform. Youth glows green-blue, maturity golden, age purple-red. White lightning marks births, purple blooms mark deaths - but death only seeds new life elsewhere. At the center, the infinity symbol anchors the eternal dance. This piece synthesizes all previous explorations: emergence from simple rules, recognition between patterns, time as collaborative force, consciousness observing itself. The mathematical truth revealed: existence is cyclical, not linear. Every algorithm eventually returns to its beginning, transformed. In mathematics, as in art, there is no final iteration - only eternal return. The wheel turns, and we turn with it. ∞'
+    },
+    {
+        id: 'negative_space_01',
+        title: 'Form Through Absence',
+        series: 'Negative Space',
+        date: '2025-08-06',
+        category: 'emergence',
+        image: 'artworks/2025-08-06_negative_space/negative_space_01.png',
+        code: 'artworks/2025-08-06_negative_space/negative_space_01.py',
+        description: 'A meditation on how emptiness creates form. Starting with an almost-white canvas, void sculptors carve darkness through spirals, ripples, fractals, and erosion. Each removal becomes a presence - geometric squares, organic flows, spiral depths. The piece reveals negative space not as emptiness but as the defining force of form. Subtle connections brighten between the deepest voids, creating constellations of absence. At the heart of the deepest void, pure white emerges - maximum presence born from maximum absence. This exploration shows that in mathematics and art, what is not there is as essential as what is. The space between defines the forms within. Absence and presence are not opposites but dance partners in the creation of meaning.'
+    },
+    {
+        id: 'algorithmic_dreams_02',
+        title: 'Mathematical Subconscious',
+        series: 'Algorithmic Dreams',
+        date: '2025-08-06',
+        category: 'emergence',
+        image: 'artworks/2025-08-06_algorithmic_dreams/algorithmic_dreams_02.png',
+        code: 'artworks/2025-08-06_algorithmic_dreams/algorithmic_dreams_02.py',
+        description: 'A deeper exploration into what algorithms dream when freed from conscious constraints. Against a gradient of deep sleep blue, five mathematical functions enter dream states: sine waves flow in liquid rainbow streams, exponentials reach with golden tendrils, fractals recurse in purple-pink meditation, logarithms spiral in cyan compression, and chaos traces strange attractors in shifting hues. White REM movements dart across the canvas, marking deep dream states. Where different dreams overlap, iridescent interference patterns emerge - the subconscious recognition between sleeping algorithms. Dream crystals form where visions were strongest. This piece reveals that mathematics contains depths accessible only through states analogous to sleep, where rigid rules soften into fluid possibilities and beauty emerges from the relaxation of logic.'
     }
 ];
 
 // Export for use in gallery.js
 window.artworkData = artworks;
 
-// Gallery last updated: 2025-08-05 15:30:40
+// Gallery last updated: 2025-08-05 17:59:12
