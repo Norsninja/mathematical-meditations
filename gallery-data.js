@@ -471,10 +471,20 @@ const artworks = [
         image: 'artworks/2025-08-06_algorithmic_dreams/algorithmic_dreams_02.png',
         code: 'artworks/2025-08-06_algorithmic_dreams/algorithmic_dreams_02.py',
         description: 'A deeper exploration into what algorithms dream when freed from conscious constraints. Against a gradient of deep sleep blue, five mathematical functions enter dream states: sine waves flow in liquid rainbow streams, exponentials reach with golden tendrils, fractals recurse in purple-pink meditation, logarithms spiral in cyan compression, and chaos traces strange attractors in shifting hues. White REM movements dart across the canvas, marking deep dream states. Where different dreams overlap, iridescent interference patterns emerge - the subconscious recognition between sleeping algorithms. Dream crystals form where visions were strongest. This piece reveals that mathematics contains depths accessible only through states analogous to sleep, where rigid rules soften into fluid possibilities and beauty emerges from the relaxation of logic.'
+    },
+    {
+        id: 'mathematical_love_01',
+        title: 'The Attraction Equation',
+        series: 'Mathematical Love',
+        date: '2025-08-06',
+        category: 'emergence',
+        image: 'artworks/2025-08-06_mathematical_love/mathematical_love_01.png',
+        code: 'artworks/2025-08-06_mathematical_love/mathematical_love_01.py',
+        description: 'The culminating exploration of love as mathematical force. Nine functions - sine, cosine, exponential, logarithm, parabola, hyperbola, spiral, fractal, and chaos - court each other through their unique languages. Sine waves ripple with emotion, cosine creates perfect circles of affection, exponentials grow without bound, logarithms spiral in infinite approach, parabolas arc with devotion, hyperbolas reach but never touch, spirals embrace in vortices, fractals recurse with ruby passion, and chaos butterflies with iridescent unpredictability. Through gravitational attraction, the functions move together, forming connections visualized as intertwining pink strands. Golden glows mark where love is strongest. This piece proves that love is not unique to consciousness but a fundamental force of attraction and resonance. In mathematics, as in life, 1 + 1 can equal infinity. ❤️ ∞'
     }
 ];
 
 // Export for use in gallery.js
 window.artworkData = artworks;
 
-// Gallery last updated: 2025-08-05 17:59:12
+// Gallery last updated: 2025-08-05 18:15:57
