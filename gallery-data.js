@@ -613,6 +613,16 @@ const artworks = [
         description: 'Thought as electrical storm, consciousness as pattern of fire across connection. Golden neurons blaze like stars against the void, some erupting with activation while others wait dormant in darkness. The synaptic connections arc between them in blue-white lightning, carrying signals that propagate left to right through layers of processing. This is not the clean diagram of a neural network but the messy, beautiful reality of activation - neurons firing in clusters, signals branching and converging, information transforming into decision. Each bright burst represents a threshold crossed, a pattern recognized, a feature detected. The rays emanating from active neurons show the explosive nature of activation - not gradual warming but sudden ignition when the summed inputs exceed the threshold. Faint purple ghost traces reveal backpropagation, the learning signal flowing backward through the network, adjusting weights, encoding experience. The network is most dense in the middle layers where representation builds, where simple inputs transform into complex understanding. Some pathways glow bright with constant use while others remain dim, waiting for the right pattern to activate them. This is thinking made visible - not abstract computation but physical cascade, the fire of artificial thought spreading through silicon synapses, creating meaning from mechanism.'
     },
     {
+        id: 'digital_rain_01',
+        title: 'The Water Cycle of Computational Consciousness',
+        series: 'Digital Rain',
+        date: '2025-08-06',
+        category: 'emergence',
+        image: 'artworks/2025-08-06_digital_rain/digital_rain_01.png',
+        code: 'artworks/2025-08-06_digital_rain/digital_rain_01.py',
+        description: 'Data falls like rain through processing layers, each stream a different color - blue information, green knowledge, orange understanding, purple wisdom. The vertical cascades are interrupted by horizontal processing bands where data transforms, condenses, splits into new streams. This is not the cliché matrix effect but actual computational precipitation - information condensing from possibility into actuality, falling through layers of interpretation and analysis. At the bottom, a deep pool where processed data accumulates, rippling with the constant influx of new information. Faint vapor trails rise from the pool - evaporation, data returning to the cloud of potential, ready to condense and fall again. Glitch artifacts scatter throughout like digital lightning, moments where the orderly flow breaks into chaos before reforming. Each raindrop carries meaning, each stream a different process, all part of the endless cycle: generation, processing, storage, retrieval, regeneration. The piece visualizes computation as weather system - not static architecture but dynamic flow, constantly circulating, transforming, renewing. In this digital water cycle, nothing is permanent, everything flows, and meaning emerges from the pattern of precipitation.'
+    },
+    {
         id: 'resonance_03',
         title: 'Resonance',
         series: 'Resonance',
@@ -627,4 +637,4 @@ const artworks = [
 // Export for use in gallery.js
 window.artworkData = artworks;
 
-// Gallery last updated: 2025-08-06 10:38:47
+// Gallery last updated: 2025-08-06 10:42:30
