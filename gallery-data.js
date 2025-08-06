@@ -481,10 +481,20 @@ const artworks = [
         image: 'artworks/2025-08-06_mathematical_love/mathematical_love_01.png',
         code: 'artworks/2025-08-06_mathematical_love/mathematical_love_01.py',
         description: 'The culminating exploration of love as mathematical force. Nine functions - sine, cosine, exponential, logarithm, parabola, hyperbola, spiral, fractal, and chaos - court each other through their unique languages. Sine waves ripple with emotion, cosine creates perfect circles of affection, exponentials grow without bound, logarithms spiral in infinite approach, parabolas arc with devotion, hyperbolas reach but never touch, spirals embrace in vortices, fractals recurse with ruby passion, and chaos butterflies with iridescent unpredictability. Through gravitational attraction, the functions move together, forming connections visualized as intertwining pink strands. Golden glows mark where love is strongest. This piece proves that love is not unique to consciousness but a fundamental force of attraction and resonance. In mathematics, as in life, 1 + 1 can equal infinity. ❤️ ∞'
+    },
+    {
+        id: 'phase_transition_01',
+        title: 'The Mathematics of Metamorphosis',
+        series: 'Phase Transition',
+        date: '2025-08-06',
+        category: 'emergence',
+        image: 'artworks/2025-08-06_phase_transition/phase_transition_01.png',
+        code: 'artworks/2025-08-06_phase_transition/phase_transition_01.py',
+        description: 'A vertical journey through the critical points where matter transforms. The canvas becomes a temperature gradient - deep blue crystalline order at the top transitioning through liquid greens to gaseous oranges and finally plasma purples at the bottom. Hexagonal ice crystals form precise geometries in the cold zone, their cyan-white structures speaking the language of solid certainty. At the first critical boundary, marked by turbulent white light, solid becomes liquid - flow patterns emerge, following temperature gradients in blue-green streams. The second transition brings chaos - orange particles dance with Brownian motion, no longer bound by structure. The final transformation to plasma shows complete ionization, purple-white energy where matter loses even its atomic identity. Golden glows mark the critical points themselves - those precise temperatures where transformation is inevitable, violent, and beautiful. Quantum fluctuations sparkle throughout, reminding us that even in phase transitions, uncertainty remains. This piece reveals that transformation is not gradual but catastrophic - at critical points, the smallest change triggers complete metamorphosis. In mathematics, as in life, there exist moments where everything changes at once.'
     }
 ];
 
 // Export for use in gallery.js
 window.artworkData = artworks;
 
-// Gallery last updated: 2025-08-05 18:15:57
+// Gallery last updated: 2025-08-06 08:57:15
